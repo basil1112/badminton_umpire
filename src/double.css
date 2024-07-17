@@ -1,0 +1,177 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* .court {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 40px 120px 120px 40px;
+    grid-template-columns: 50px 200px 80px 80px 200px 50px;
+    top: 50%;
+    left: 50%;
+    border: solid 1px #fff;
+    justify-content: center;
+    align-content: center;
+}
+ */
+
+.court {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 40px 120px 120px 40px;
+    grid-template-columns: 5% 20% 7.8% 8% 20% 5%;
+    border: solid 1px #fff;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.court>div {
+    border: solid #fff;
+    background: #118744;
+    border-width: 1px 0 0 1px;
+    transition: all 0.5s;
+    cursor: pointer;
+    align-content: center;
+}
+
+.court>div>div {
+    text-align: center;
+}
+
+.court>div:hover {
+    background: #85d685;
+}
+
+.court>div:nth-child(6),
+.court>div:nth-child(12),
+.court>div:nth-child(16),
+.court>div:nth-child(22) {
+    border-right-width: 1px;
+}
+
+.court>div:nth-last-child(-n+6) {
+    border-bottom-width: 1px;
+}
+
+.court>div:nth-child(9),
+.court>div:nth-child(10) {
+    grid-row: 2/4;
+}
+
+.court>div:nth-child(9) {
+    grid-column: 3;
+}
+
+.court>div:nth-child(10) {
+    grid-column: 4;
+}
+
+.serve-indicator {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 100px;
+}
+
+.team1_even {
+    transform: rotate(190deg);
+}
+
+.team1_odd {
+    transform: rotate(245deg);
+}
+
+.team2_even {
+    transform: rotate(12deg);
+}
+
+.team2_odd {
+    transform: rotate(60deg);
+}
+
+.player_info {
+    font-size: x-large;
+}
+
+
+.court_arrow {
+    width: 100px;
+    height: 100px;
+    background: url("../public/images/court/court_arrow.svg") no-repeat;
+}
+
+
+/* grid-template-rows: 40px 120px 120px 40px;
+    grid-template-columns: 7% 35% 8% 8% 35% 12%; */
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (max-width: 1023px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 767px) {
+
+    .court {
+        background-color: white;
+        display: grid;
+        grid-template-rows: 40px 120px 120px 40px;
+        grid-template-columns: 5% 20% 7.8% 8% 20% 5%;
+        border: solid 1px #fff;
+        justify-content: center;
+        align-content: center;
+    }
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .court {
+        background-color: white;
+        display: grid;
+        grid-template-rows: 40px 120px 120px 40px;
+        grid-template-columns: 7% 35% 9% 9% 35% 7%;
+        border: solid 1px #fff;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+
+
+
+/* Default Width: */
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .court {
+        background-color: white;
+        display: grid;
+        grid-template-rows: 40px 120px 120px 40px;
+        grid-template-columns: 7% 35% 9% 9% 35% 7%;
+        border: solid 1px #fff;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
